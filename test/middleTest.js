@@ -1,8 +1,8 @@
 // TEST/ASSERTION FUNCTIONS
 const assert = require('chai').assert;
 const middle = require('../middle');
-const eqArrays = require('../eqArrays');
-const assertArraysEqual = require('../assertArraysEqual');
+// const eqArrays = require('../eqArrays');
+// const assertArraysEqual = require('../assertArraysEqual');
 
 describe("#middle", () => {
   it("returns [] for [1]", () => {
@@ -26,17 +26,12 @@ describe("#middle", () => {
 // assertArraysEqual(middle(["Hello", "Lighthouse", "Labs"]), ["Lighthouse"]);
 
 // TEST CODE
-// middle([1]) // => []
-// middle([1, 2]) // => []
 // console.log(middle([1]));
 // console.log(middle([1, 2]));
 
-// middle([1, 2, 3]) // => [2]
-// middle([1, 2, 3, 4, 5]) // => [3]
-// console.log(middle([1, 2, 3]));
+// console.log(middle([1, 2, 3])); // => [2]
+// console.log(middle([1, 2, 3, 4, 5])); // => [3]
 
 
-// middle([1, 2, 3, 4]) // => [2, 3]
-// middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
-// console.log(middle([1, 2, 3, 4]));
-// console.log(middle([1, 2, 3, 4, 5, 6]));
+// console.log(middle([1, 2, 3, 4])); // => [2, 3]
+// console.log(middle([1, 2, 3, 4, 5, 6])); // => [3, 4]
