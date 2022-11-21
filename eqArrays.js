@@ -17,12 +17,3 @@ const eqArrays = function(actual, expected) {
 };
 
 module.exports = eqArrays;
-
-// test
-console.log(eqArrays([1, 2, 3], [1, 2, 3])); //should be true
-console.log(eqArrays([1, 2, 3], [2, 3, 4]));//should be false
-
-
-// TEST CODE
-console.log(eqArrays("Lighthouse Labs", "Bootcamp"));// should be false
-console.log(eqArrays(1, 1));//should be true
