@@ -4,11 +4,7 @@
  *  if empty array => return 'undefined'
  */
  const tail = function(array) {
-  return array.slice[0]; //1, array.length-1
+  return array.slice(1, array.length); //1, array.length-1
 }
 
-//Test code
-/**
- * const result = tail(["Hello", "Lighthouse", "Labs"]);
- * assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
- */
+module.exports = tail;
