@@ -1,7 +1,8 @@
-const findKey = function(object, callback){
+//const findKey = function(object, callback){
+const findKey = (object, callback) => {
   for (var key in object){
     if (callback(object[key])){ // when object[key] is "noma"
-      return key;
+      return key; //print key
     }
   }
 }
@@ -16,3 +17,4 @@ let obj = {
 }
 
 console.log(findKey(obj, x => x.stars === 2));
+//                  object   callback
