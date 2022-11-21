@@ -19,6 +19,6 @@ describe("#head", () => {
   });
 });
 
-// OLD TEST CODE
+// OLD TEST CODE based on assertEqual and head function
 // assertEqual(head([5,6,7]), 5);
 // assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
