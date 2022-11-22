@@ -77,6 +77,15 @@ eqArrays([1, 2, 3], [2, 3, 4]); // => false
 * `eqObjects(actual, expected)`: Takes in two objects, and asserts whether they are equal. It returns true or false.
 * `findkey(object, callback)`: Takes in an object and a callback function. It returns the first key for which the callback returns a truthy value.
 * `findkeyByValue(object, value)`: Takes in an object and a value. It scans the object and return the first key which contains the given value. and asserts whether they are equal.
+```javascript
+const bestTVShowsByGenre = {
+  sciFi: "The Expanse",
+  comedy: "Brooklyn Nine-Nine",
+  drama:  "The Wire"
+};
+findKeyByValue(bestTVShowsByGenre, "The Wire");
+// => "drama"
+```
 * `head(array)`: Returns the first element of the array.
 * `letterPositions(sentence)`: Returns all the indices (zero-based positions) in the string where each character is found.
 * `map(array, callback)`: Takes in an array to map and a callback function, and returns a new array based on the callback function.
