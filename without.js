@@ -1,21 +1,19 @@
+const assertArraysEqual = require("./assertArraysEqual");
 /**
- * This function should take in a source array and a itemsToRemove array. 
- * It should return a new array with only those elements from source that 
+ * This function should take in a source array and a itemsToRemove array.
+ * It should return a new array with only those elements from source that
  * are not present in the itemsToRemove array.
  */
-
-const assertArraysEqual = require("./assertArraysEqual");
-
-const without = function(soureArray, itemsToRemoveArray){
+const without = function(soureArray, itemsToRemoveArray) {
   let result = [];
-  for (let s of soureArray){
+  for (let s of soureArray) {
     let isIncluded = true;
-    for (let i of itemsToRemoveArray){
+    for (let i of itemsToRemoveArray) {
       if (s === i || typeof s !== 'string' && isNaN(s) && isNaN(i)) {
         isIncluded = false;
       }
     }
-    if (isIncluded){
+    if (isIncluded) {
       result.push(s);
     }
   }
@@ -23,8 +21,8 @@ const without = function(soureArray, itemsToRemoveArray){
 };
 
 // Test code
-without([1, 2, 3], [1]) // => [2, 3]
-without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
+without([1, 2, 3], [1]); // => [2, 3]
+without(["1", "2", "3"], [1, 2, "3"]); // => ["1", "2"]
 
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]); // no need to capture return value for this test case
