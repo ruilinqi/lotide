@@ -12,7 +12,7 @@ This project was created and published by me as part of my learnings at Lighthou
 
 **Install it:**
 
-`npm install @username/lotide`
+`npm install @ruilinqi/lotide`
 
 **Require it:**
 
@@ -26,6 +26,6 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-* `function1(...)`: description
-* `function2(...)`: description
-* `function3(...)`: description
+* `assertArraysEqual(actual, expected)`: Takes in two arrays, and asserts whether two arrays are equal.
+* `assertEqual(actual, expected)`: Takes in two primitive values, and asserts whether they are equal.
+* `assertObjectsEqual(actual, expected)`: Takes in two objects, and asserts whether they are equal.
