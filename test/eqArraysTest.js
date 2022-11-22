@@ -1,5 +1,4 @@
 // ?? The eqArraysTest.js file should require the assertEqual function instead of it being copied in there
-
 const eqArrays = require('../eqArrays');
 
 // TEST CODE

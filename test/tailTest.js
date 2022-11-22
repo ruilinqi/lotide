@@ -10,7 +10,7 @@ describe("#tail", () => {
     assert.deepEqual(tail(['Hello', 'Lighthouse', 'Labs']), ['Lighthouse', 'Labs']);
   });
   it("returns ['5', '6'] for ['4', '5', '6']", () => {
-    assert.deepEqual(tail(['4', '5', '6']), ['5', '6']); 
+    assert.deepEqual(tail(['4', '5', '6']), ['5', '6']);
   });
   it("return [6, 7] for [5, 6, 7]", () => {
     assert.deepEqual(tail([5, 6, 7]), [6, 7]);

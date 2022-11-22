@@ -2,7 +2,6 @@ const assert = require('chai').assert;
 const head = require('../head');
 // const assertEqual = require('../assertEqual');
 
-
 // Mocha and Chai based test code
 // assert.strictEqual simply uses === to compare values
 describe("#head", () => {
@@ -10,7 +9,7 @@ describe("#head", () => {
     assert.strictEqual(head([1, 2, 3]), 1);
   });
   it("returns '5' for ['5']", () => {
-    assert.strictEqual(head(['5']), '5'); 
+    assert.strictEqual(head(['5']), '5');
   });
   it("return '5' for [5,6,7]", () => {
     assert.strictEqual(head([5, 6, 7]), 5);
